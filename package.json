@@ -10,17 +10,17 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:complete-statement.helloWorld"
+        "onCommand:complete-statement.completeCurrent"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "complete-statement.helloWorld",
-				"title": "Hello World"
+				"command": "complete-statement.completeCurrent",
+				"title": "complete-statement: Complete current statement"
 			}
 		]
-	},
+	},	
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
